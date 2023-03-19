@@ -8,8 +8,17 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 .mar-top {
-  margin-top: 30px;
+  margin-top: 100px;
 }
 
 .custom-navbar {
@@ -57,43 +66,4 @@
 .landing-page .row .right-landing-page {
   display: grid;
   place-items: center;
-}
-
-.main .container-fluid .container .main-core {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main .container-fluid .container .main-core .left-main h1 {
-  font-weight: 700;
-  color: #ff00a8;
-  font-family: "Shantell Sans", cursive;
-}
-.main .container-fluid .container .main-core .left-main p {
-  font-weight: 500;
-  color: #b10cff;
-}
-.main .container-fluid .container .main-core .left-main .btn {
-  background-color: #ff00a8;
-  color: white;
-}
-
-.paket-layanan .container-fluid .container .paket-layanan-core h1 {
-  text-align: center;
-  font-weight: 700;
-  color: #ff00a8;
-  font-family: "Shantell Sans", cursive;
-}
-.paket-layanan .container-fluid .container .paket-layanan-core p {
-  text-align: center;
-  font-weight: 500;
-  color: #b10cff;
-}
-.paket-layanan .container-fluid .container .card-paket-layanan .card .card-body .card-title {
-  color: #ff00a8;
-  font-weight: 700;
-}
-.paket-layanan .container-fluid .container .card-paket-layanan .card .card-body .btn {
-  background-color: #ff00a8;
-  color: white;
 }
