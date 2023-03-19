@@ -1,0 +1,84 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@1,700&family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+// Variabel
+$primaryColor: #ff00a8;
+$secondaryColor: #f68bd2;
+$tertiaryColor: #b10cff;
+
+// Styles
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  // outline: 1px solid red;
+}
+
+.mar-top {
+  margin-top: 30px;
+}
+
+// NavBar
+.custom-navbar {
+  background-color: $primaryColor;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 1px 5px $primaryColor;
+  z-index: 999;
+  .navbar-brand {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+  }
+  #navbarNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: white;
+          font-weight: 700;
+          font-family: 'Shantell Sans', cursive;
+
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Landing Page
+.landing-page {
+  .row {
+    .image {
+      width: 100%;
+    }
+    h1 {
+      font-size: 65px;
+      font-weight: 700;
+      color: $primaryColor;
+      text-align: center;
+      font-family: 'Shantell Sans', cursive;
+      margin-top: 70px;
+      margin-bottom: 40px;
+      span {
+        color: $tertiaryColor;
+        font-family: 'Shantell Sans', cursive;
+        font-weight: bold;
+      }
+    }
+    .benefit {
+      .benefit-image {
+        width: 180px;
+        height: 120px;
+      }
+    }
+    .right-landing-page {
+      display: grid;
+      place-items: center;
+    }
+  }
+}

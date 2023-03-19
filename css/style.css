@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@1,700&family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.mar-top {
+  margin-top: 30px;
+}
+
+.custom-navbar {
+  background-color: #ff00a8;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 1px 5px #ff00a8;
+  z-index: 999;
+}
+.custom-navbar .navbar-brand {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+}
+.custom-navbar #navbarNav .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 700;
+  font-family: "Shantell Sans", cursive;
+}
+.custom-navbar #navbarNav .navbar-nav .nav-item .nav-link:hover {
+  color: #f68bd2;
+}
+
+.landing-page .row .image {
+  width: 100%;
+}
+.landing-page .row h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #ff00a8;
+  text-align: center;
+  font-family: "Shantell Sans", cursive;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.landing-page .row h1 span {
+  color: #b10cff;
+  font-family: "Shantell Sans", cursive;
+  font-weight: bold;
+}
+.landing-page .row .benefit .benefit-image {
+  width: 180px;
+  height: 120px;
+}
+.landing-page .row .right-landing-page {
+  display: grid;
+  place-items: center;
+}
+
+.main .container-fluid .container .main-core {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .container-fluid .container .main-core .left-main h1 {
+  font-weight: 700;
+  color: #ff00a8;
+  font-family: "Shantell Sans", cursive;
+}
+.main .container-fluid .container .main-core .left-main p {
+  font-weight: 500;
+  color: #b10cff;
+}
+.main .container-fluid .container .main-core .left-main .btn {
+  background-color: #ff00a8;
+  color: white;
+}
+
+.paket-layanan .container-fluid .container .paket-layanan-core h1 {
+  text-align: center;
+  font-weight: 700;
+  color: #ff00a8;
+  font-family: "Shantell Sans", cursive;
+}
+.paket-layanan .container-fluid .container .paket-layanan-core p {
+  text-align: center;
+  font-weight: 500;
+  color: #b10cff;
+}
+.paket-layanan .container-fluid .container .card-paket-layanan .card .card-body .card-title {
+  color: #ff00a8;
+  font-weight: 700;
+}
+.paket-layanan .container-fluid .container .card-paket-layanan .card .card-body .btn {
+  background-color: #ff00a8;
+  color: white;
+}

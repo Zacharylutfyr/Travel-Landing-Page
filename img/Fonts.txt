@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Montserrat
+Author: Julieta Ulanovsky
+Url: http://www.fontsquirrel.com/fonts/montserrat
+
+Font: Baloo
+Author: Ek Type
+Url: https://fonts.google.com/specimen/baloo
