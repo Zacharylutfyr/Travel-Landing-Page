@@ -24,8 +24,8 @@ html {
 
 body {
   overflow-x: hidden;
+  height: 100vh;
 }
-
 
 .mar-top {
   margin-top: 100px;
@@ -67,7 +67,7 @@ body {
       width: 100%;
     }
     h1 {
-      font-size: 65px;
+      font-size: 75px;
       font-weight: 700;
       color: $primaryColor;
       text-align: center;
@@ -90,5 +90,34 @@ body {
       display: grid;
       place-items: center;
     }
+  }
+}
+
+// Most Visited
+.most-visited {
+  display: grid;
+  grid-template-areas:
+    'leftMain middleMain rightMain'
+    'leftMain middleMain rightMain'
+    'leftMain middleMain rightMain';
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-rows: 3fr 1fr;
+  .leftMain {
+    background-color: #b10cff;
+    grid-area: leftMain;
+    padding: 0;
+    margin: 0;
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .middleMain {
+    background-color: #a6a5a7;
+    grid-area: middleMain;
+  }
+  .rightMain {
+    background-color: #000000;
+    grid-area: rightMain;
   }
 }
