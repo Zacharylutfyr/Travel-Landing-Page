@@ -15,7 +15,7 @@ html {
 
 body {
   overflow-x: hidden;
-  height: 100vh;
+  height: 1000vh;
 }
 
 .mar-top {
@@ -24,10 +24,8 @@ body {
 
 .custom-navbar {
   background-color: #ff00a8;
-  position: fixed;
   width: 100%;
   box-shadow: 0px 1px 5px #ff00a8;
-  z-index: 999;
 }
 .custom-navbar .navbar-brand {
   color: white;
@@ -136,36 +134,40 @@ body {
   background-color: #ff1053;
   border: 1px solid white;
 }
-.most-visited .review .container-fluid .container .review-core {
+
+.review .container-fluid .container .review-core {
   justify-content: space-around;
 }
-.most-visited .review .container-fluid .container .review-core h1 {
-  color: white;
+.review .container-fluid .container .review-core h1 {
+  text-align: center;
   font-weight: 700;
+  font-family: "Shantell Sans", cursive;
 }
-.most-visited .review .container-fluid .container .card {
+.review .container-fluid .container .card {
   width: 190px;
   height: 254px;
-  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  background-image: linear-gradient(163deg, #f68bd2 0%, #ff1053 100%);
   border-radius: 20px;
   transition: all 0.3s;
+  cursor: pointer;
 }
-.most-visited .review .container-fluid .container .card:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+.review .container-fluid .container .card:hover {
+  box-shadow: 0px 0px 30px 1px #ff00a8;
 }
-.most-visited .review .container-fluid .container .card .card2 {
+.review .container-fluid .container .card .card2 {
   width: 190px;
   height: 254px;
-  background-color: #777777;
+  background-color: black;
   border-radius: 20px;
   transition: all 0.2s;
   text-align: center;
 }
-.most-visited .review .container-fluid .container .card .card2 h1 {
+.review .container-fluid .container .card .card2 h1 {
   font-size: 20px;
   padding-top: 7px;
+  color: white;
 }
-.most-visited .review .container-fluid .container .card .card2 img {
+.review .container-fluid .container .card .card2 img {
   width: 120px;
   height: 120px;
   -o-object-fit: cover;
@@ -177,13 +179,13 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-.most-visited .review .container-fluid .container .card .card2 .icon i {
+.review .container-fluid .container .card .card2 .icon i {
   color: yellow;
 }
-.most-visited .review .container-fluid .container .card .card2 h6 {
+.review .container-fluid .container .card .card2 h6 {
   color: white;
 }
-.most-visited .review .container-fluid .container .card .card2:hover {
+.review .container-fluid .container .card .card2:hover {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -191,17 +193,18 @@ body {
   transform: scale(0.98);
   border-radius: 20px;
 }
-.most-visited .contact-us .container-fluid .container h1 {
+
+.contact-us .container-fluid .container h1 {
   color: white;
   font-weight: 700;
 }
-.most-visited .contact-us .container-fluid .container .left-contact-us {
+.contact-us .container-fluid .container .left-contact-us {
   color: white;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us {
+.contact-us .container-fluid .container .right-contact-us {
   display: flex;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .pack-container {
+.contact-us .container-fluid .container .right-contact-us .pack-container {
   position: relative;
   margin: auto;
   display: flex;
@@ -214,7 +217,7 @@ body {
   color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .header {
+.contact-us .container-fluid .container .right-contact-us .header {
   position: relative;
   margin: 0;
   margin-bottom: 2rem;
@@ -225,7 +228,7 @@ body {
   padding-bottom: 1rem;
   text-align: center;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .title {
+.contact-us .container-fluid .container .right-contact-us .title {
   display: block;
   font-family: sans-serif;
   font-size: 0.875rem;
@@ -233,7 +236,7 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .price-container {
+.contact-us .container-fluid .container .right-contact-us .price-container {
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -243,27 +246,27 @@ body {
   font-size: 4.5rem;
   line-height: 1;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .price-container span:first-child {
+.contact-us .container-fluid .container .right-contact-us .price-container span:first-child {
   margin-top: 10px;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .price-container span:last-child {
+.contact-us .container-fluid .container .right-contact-us .price-container span:last-child {
   align-self: flex-end;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .lists {
+.contact-us .container-fluid .container .right-contact-us .lists {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .list {
+.contact-us .container-fluid .container .right-contact-us .list {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .list span {
+.contact-us .container-fluid .container .right-contact-us .list span {
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.24);
   background-color: rgba(255, 255, 255, 0.185);
@@ -273,19 +276,19 @@ body {
   align-items: center;
   justify-content: center;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .list span svg {
+.contact-us .container-fluid .container .right-contact-us .list span svg {
   height: 12px;
   width: 12px;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .list p {
+.contact-us .container-fluid .container .right-contact-us .list p {
   display: block;
   font-family: sans-serif;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .button-container {
+.contact-us .container-fluid .container .right-contact-us .button-container {
   margin-top: 20px;
   padding: 0;
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .button-container button {
+.contact-us .container-fluid .container .right-contact-us .button-container button {
   display: block;
   width: 100%;
   background-color: #fff;
@@ -297,26 +300,8 @@ body {
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.185);
 }
-.most-visited .contact-us .container-fluid .container .right-contact-us .button-container button:hover {
+.contact-us .container-fluid .container .right-contact-us .button-container button:hover {
   background-color: #212121;
   color: white;
   border: 2px solid wheat;
-}
-.most-visited .footer .container-fluid {
-  background-color: whitesmoke;
-}
-.most-visited .footer .container-fluid .container .footer-core {
-  display: flex;
-}
-.most-visited .footer .container-fluid .container .footer-core p {
-  margin: auto;
-  color: rgb(0, 0, 0);
-  font-weight: 500;
-  padding: 10px;
-}
-.most-visited .footer .container-fluid .container .footer-core p i {
-  color: red;
-}
-.most-visited .footer .container-fluid .container .footer-core p span {
-  font-weight: 700;
 }
