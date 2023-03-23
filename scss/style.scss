@@ -25,11 +25,19 @@ html {
 
 body {
   overflow-x: hidden;
-  height: 1000vh;
 }
 
 .mar-top {
   margin-top: 100px;
+}
+.mar-bot {
+  margin-top: 100px;
+}
+.pad-top {
+  padding-top: 100px; 
+}
+.pad-bot {
+  padding-bottom: 100px; 
 }
 
 // NavBar
@@ -92,6 +100,7 @@ body {
   }
 }
 
+// Advantage
 .main {
   background-color: $primaryColor;
   .container-fluid {
@@ -252,6 +261,7 @@ body {
       h1 {
         color: white;
         font-weight: 700;
+        font-family: 'Shantell Sans', cursive;
       }
       .left-contact-us {
         color: white;
@@ -376,3 +386,32 @@ body {
 }
 
 // Contact Last Us
+
+
+// Footer
+
+.footer {
+  .container-fluid {
+    background-color: whitesmoke;
+    .container {
+      .footer-core {
+        display: flex;
+        p {
+          margin: auto;
+          color: rgb(0, 0, 0);
+          font-weight: 500;
+          padding: 10px;
+          i {
+            color: red;
+          }
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Last Footer
+

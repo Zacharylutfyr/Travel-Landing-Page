@@ -21,6 +21,9 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="alert/dist/sweetalert.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
     <!-- todo Navbar -->
@@ -87,10 +90,10 @@
     <main class="main">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-9 left-main text-center">
+          <div class="col-sm-12 col-md-9 left-main text-center">
             <h4 class="mb-5">Advandage</h4>
             <div class="cards">
-              <div class="card rounded-3">
+              <div class="card rounded-3 ms-3">
                 <img src="/img/main-1.jpg" class="rounded-3" alt="" />
                 <h6>Flight</h6>
               </div>
@@ -104,7 +107,7 @@
               </div>
               <div class="card rounded-3">
                 <img src="/img/mesjid.jpg" class="rounded-3" alt="" />
-                <h6>Pray</h6>
+                <h6>Comfortable Worship</h6>
               </div>
               <div class="card rounded-3">
                 <img src="/img/palorid.jpg" class="rounded-3" alt="" />
@@ -112,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 right-main">
+          <div class="col-sm-12 col-md-2 right-main">
             <img src="img/zlr.jpg" alt="" />
             <h5 class="mt-4">
               Discover The best Lovely Places & Find Popular Destinations
@@ -129,15 +132,15 @@
       <div class="container-fluid">
         <div class="container">
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4">
               <img src="img/bangkok.jpg" class="most-visited-city" alt="" />
               <button type="button" class="btn mt-4">Visit Bangkok</button>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4">
               <img src="img/paris.jpg" class="most-visited-city" alt="" />
               <button type="button" class="btn mt-4">Visit Paris</button>
             </div>
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4">
               <img src="img/london.jpg" class="most-visited-city" alt="" />
               <button type="button" class="btn mt-4">Visit London</button>
             </div>
@@ -145,12 +148,12 @@
         </div>
       </div>
     </section>
-    
+
     <!-- todo Last Most Visited -->
 
-     <!-- todo Review -->
-     <div class="review" id="review">
-      <img src="img/wave-bawah-hitam.svg" alt="">
+    <!-- todo Review -->
+    <div class="review" id="review">
+      <img src="img/wave-bawah-hitam.svg" alt="" />
       <div class="container-fluid">
         <div class="container">
           <div class="row review-core">
@@ -226,193 +229,212 @@
     </div>
     <!-- todo Last Review -->
 
-      <!-- todo Contact Us -->
+    <!-- todo Contact Us -->
 
-      <img src="img/wave-atas-hitam.svg" alt="">
-      <div class="contact-us bg-black" id="contact-us">
-        <div class="container-fluid">
-          <div class="container">
-            <h1>Contact Us</h1>
-            <div class="row">
-              <div class="col-sm-12 mt-4 col-md-6 left-contact-us">
-                <div class="row">
-                  <div class="col-6">
-                    <h6 class="pt-4">Name</h6>
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder=""
-                      aria-label="default input example" />
-                  </div>
-                  <div class="col-6">
-                    <h6 class="pt-4">Age</h6>
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder=""
-                      aria-label="default input example" />
+    <img src="img/wave-atas-hitam.svg" alt="" />
+    <div class="contact-us bg-black pad-bot" id="contact-us">
+      <div class="container-fluid">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <div class="row">
+            <div class="col-sm-12 mt-4 col-md-6 left-contact-us">
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="pt-4">Name</h6>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder=""
+                    aria-label="default input example" />
+                </div>
+                <div class="col-6">
+                  <h6 class="pt-4">Age</h6>
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder=""
+                    aria-label="default input example" />
+                </div>
+              </div>
+              <h6 class="pt-4 text-lowercase">Email</h6>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+
+              <h6 class="pt-4">City</h6>
+              <input
+                class="form-control"
+                type="text"
+                placeholder=""
+                aria-label="default input example" />
+
+              <h6 class="pt-4">First Destination</h6>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>London</option>
+                <option>Paris</option>
+                <option>New York</option>
+                <option>Tokyo</option>
+                <option>Dubai</option>
+                <option>Madrid</option>
+                <option>Los Angeles</option>
+                <option>Rio De Janeiro</option>
+                <option>Hamburg</option>
+                <option>Roma</option>
+                <option>Jakarta</option>
+                <option>Singapore</option>
+                <option>Melbourne</option>
+                <option>Seoul</option>
+                <option>Bangkok</option>
+              </select>
+              <h6 class="pt-4">Second Destination</h6>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>London</option>
+                <option>Paris</option>
+                <option>New York</option>
+                <option>Tokyo</option>
+                <option>Dubai</option>
+                <option>Madrid</option>
+                <option>Los Angeles</option>
+                <option>Rio De Janeiro</option>
+                <option>Hamburg</option>
+                <option>Roma</option>
+                <option>Jakarta</option>
+                <option>Singapore</option>
+                <option>Melbourne</option>
+                <option>Seoul</option>
+                <option>Bangkok</option>
+              </select>
+              <h6 class="pt-4">Last Destination</h6>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>London</option>
+                <option>Paris</option>
+                <option>New York</option>
+                <option>Tokyo</option>
+                <option>Dubai</option>
+                <option>Madrid</option>
+                <option>Los Angeles</option>
+                <option>Rio De Janeiro</option>
+                <option>Hamburg</option>
+                <option>Roma</option>
+                <option>Jakarta</option>
+                <option>Singapore</option>
+                <option>Melbourne</option>
+                <option>Seoul</option>
+                <option>Bangkok</option>
+              </select>
+            </div>
+            <div class="col-sm-12 mt-4 col-md-6 right-contact-us">
+              <div class="pack-container">
+                <div class="header">
+                  <p class="title">Starting From</p>
+                  <div class="price-container">
+                    <span>$</span>19K
+                    <span>/mo</span>
                   </div>
                 </div>
-                <h6 class="pt-4 text-lowercase">Email</h6>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp" />
-  
-                <h6 class="pt-4">City</h6>
-                <input
-                  class="form-control"
-                  type="text"
-                  placeholder=""
-                  aria-label="default input example" />
-  
-                <h6 class="pt-4">First Destination</h6>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>London</option>
-                  <option>Paris</option>
-                  <option>New York</option>
-                  <option>Tokyo</option>
-                  <option>Dubai</option>
-                  <option>Madrid</option>
-                  <option>Los Angeles</option>
-                  <option>Rio De Janeiro</option>
-                  <option>Hamburg</option>
-                  <option>Roma</option>
-                  <option>Jakarta</option>
-                  <option>Singapore</option>
-                  <option>Melbourne</option>
-                  <option>Seoul</option>
-                </select>
-                <h6 class="pt-4">Second Destination</h6>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>London</option>
-                  <option>Paris</option>
-                  <option>New York</option>
-                  <option>Tokyo</option>
-                  <option>Dubai</option>
-                  <option>Madrid</option>
-                  <option>Los Angeles</option>
-                  <option>Rio De Janeiro</option>
-                  <option>Hamburg</option>
-                  <option>Roma</option>
-                  <option>Jakarta</option>
-                  <option>Singapore</option>
-                  <option>Melbourne</option>
-                  <option>Seoul</option>
-                </select>
-                <h6 class="pt-4">Last Destination</h6>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>London</option>
-                  <option>Paris</option>
-                  <option>New York</option>
-                  <option>Tokyo</option>
-                  <option>Dubai</option>
-                  <option>Madrid</option>
-                  <option>Los Angeles</option>
-                  <option>Rio De Janeiro</option>
-                  <option>Hamburg</option>
-                  <option>Roma</option>
-                  <option>Jakarta</option>
-                  <option>Singapore</option>
-                  <option>Melbourne</option>
-                  <option>Seoul</option>
-                </select>
-              </div>
-              <div class="col-sm-12 mt-4 col-md-6 right-contact-us">
-                <div class="pack-container">
-                  <div class="header">
-                    <p class="title">Starter</p>
-                    <div class="price-container">
-                      <span>$</span>2.5K
-                      <span>/mo</span>
-                    </div>
-                  </div>
-                  <div>
-                    <ul class="lists">
-                      <li class="list">
-                        <span>
-                          <svg
-                            aria-hidden="true"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M4.5 12.75l6 6 9-13.5"
-                              stroke-linejoin="round"
-                              stroke-linecap="round"></path>
-                          </svg>
-                        </span>
-                        <p>1 - 5 People</p>
-                      </li>
-                      <li class="list">
-                        <span>
-                          <svg
-                            aria-hidden="true"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M4.5 12.75l6 6 9-13.5"
-                              stroke-linejoin="round"
-                              stroke-linecap="round"></path>
-                          </svg>
-                        </span>
-                        <p>3+ Desinations</p>
-                      </li>
-                      <li class="list">
-                        <span>
-                          <svg
-                            aria-hidden="true"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M4.5 12.75l6 6 9-13.5"
-                              stroke-linejoin="round"
-                              stroke-linecap="round"></path>
-                          </svg>
-                        </span>
-                        <p>A Week free Transport</p>
-                      </li>
-                      <li class="list">
-                        <span>
-                          <svg
-                            aria-hidden="true"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M4.5 12.75l6 6 9-13.5"
-                              stroke-linejoin="round"
-                              stroke-linecap="round"></path>
-                          </svg>
-                        </span>
-                        <p>5 star hotel accommodation 
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="button-container">
-                    <button type="button">Book A Ticket</button>
-                  </div>
+                <div>
+                  <ul class="lists">
+                    <li class="list">
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.5 12.75l6 6 9-13.5"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        </svg>
+                      </span>
+                      <p>1 - 5 People</p>
+                    </li>
+                    <li class="list">
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.5 12.75l6 6 9-13.5"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        </svg>
+                      </span>
+                      <p>3+ Desinations</p>
+                    </li>
+                    <li class="list">
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.5 12.75l6 6 9-13.5"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        </svg>
+                      </span>
+                      <p>A Week free Transport</p>
+                    </li>
+                    <li class="list">
+                      <span>
+                        <svg
+                          aria-hidden="true"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M4.5 12.75l6 6 9-13.5"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        </svg>
+                      </span>
+                      <p>5 star hotel accommodation</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="button-container">
+                  <button type="button" onclick="contoh()">
+                    Book A Ticket
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- todo Footer -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="footer-core">
+            <p>
+              Created With <i class="fas fa-heart"></i> By
+              <span> Zachary R Luthfy </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- todo Last Footer -->
 
     <!-- Font Awesome -->
     <script
@@ -424,5 +446,20 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
+
+    <!-- Alert JavaScript -->
+    <script type="text/javascript">
+      function contoh() {
+        swal({
+          title: 'Selamat !',
+
+          text: 'Tiket Anda Berhasil Di Pesan',
+
+          icon: 'success',
+
+          button: true,
+        });
+      }
+    </script>
   </body>
 </html>
