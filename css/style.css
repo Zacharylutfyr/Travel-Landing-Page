@@ -56,7 +56,7 @@ body {
   margin-bottom: 40px;
 }
 .landing-page .row h1 span {
-  color: #b10cff;
+  color: #ff1053;
   font-family: "Shantell Sans", cursive;
   font-weight: bold;
 }
@@ -69,27 +69,49 @@ body {
   place-items: center;
 }
 
-.most-visited {
-  display: grid;
-  grid-template-areas: "leftMain middleMain rightMain" "leftMain middleMain rightMain" "leftMain middleMain rightMain";
-  grid-template-columns: 3fr 1fr 3fr;
-  grid-template-rows: 3fr 1fr;
+.main {
+  background-color: #ff00a8;
 }
-.most-visited .leftMain {
-  background-color: #b10cff;
-  grid-area: leftMain;
-  padding: 0;
-  margin: 0;
+.main .container-fluid .row .left-main h4 {
+  font-family: "Shantell Sans", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
 }
-.most-visited .leftMain h1 {
-  padding: 0;
-  margin: 0;
+.main .container-fluid .row .left-main .cards {
+  display: flex;
+  gap: 10px;
 }
-.most-visited .middleMain {
-  background-color: #a6a5a7;
-  grid-area: middleMain;
+.main .container-fluid .row .left-main .cards .card {
+  width: 200px;
+  height: 300px;
+  box-shadow: -2px -2px 2px 2px #ff1053;
 }
-.most-visited .rightMain {
-  background-color: #000000;
-  grid-area: rightMain;
+.main .container-fluid .row .left-main .cards .card h6 {
+  font-family: "Shantell Sans", cursive;
+  display: flex;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ff1053;
+}
+.main .container-fluid .row .right-main img {
+  display: flex;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 120px;
+}
+.main .container-fluid .row .right-main h5 {
+  font-family: "Shantell Sans", cursive;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-weight: 900;
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@1,700&family=Orbitron:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Shantell+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 // Variabel
+$specialColor: #ff1053;
 $primaryColor: #ff00a8;
 $secondaryColor: #f68bd2;
 $tertiaryColor: #b10cff;
@@ -75,7 +76,7 @@ body {
       margin-top: 70px;
       margin-bottom: 40px;
       span {
-        color: $tertiaryColor;
+        color: $specialColor;
         font-family: 'Shantell Sans', cursive;
         font-weight: bold;
       }
@@ -93,31 +94,87 @@ body {
   }
 }
 
-// Most Visited
-.most-visited {
-  display: grid;
-  grid-template-areas:
-    'leftMain middleMain rightMain'
-    'leftMain middleMain rightMain'
-    'leftMain middleMain rightMain';
-  grid-template-columns: 3fr 1fr 3fr;
-  grid-template-rows: 3fr 1fr;
-  .leftMain {
-    background-color: #b10cff;
-    grid-area: leftMain;
-    padding: 0;
-    margin: 0;
-    h1 {
-      padding: 0;
-      margin: 0;
+.main {
+  background-color: $primaryColor;
+  .container-fluid {
+    .row {
+      .left-main {
+        h4 {
+          font-family: 'Shantell Sans', cursive;
+          font-size: 40px;
+          font-weight: 700;
+          color: white;
+        }
+        .cards {
+          display: flex;
+          gap: 10px;
+
+          .card {
+            width: 200px;
+            height: 300px;
+            box-shadow: -2px -2px 2px 2px $specialColor;
+            h6 {
+              font-family: 'Shantell Sans', cursive;
+              display: flex;
+              margin: auto;
+              font-size: 20px;
+              font-weight: 700;
+              color: $specialColor;
+            }
+          }
+        }
+      }
+      .right-main {
+        img {
+          display: flex;
+          margin: auto;
+          width: 150px;
+          height: 150px;
+          border: 3px solid rgb(255, 255, 255);
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          margin-top: 120px;
+        }
+        h5 {
+          font-family: 'Shantell Sans', cursive;
+          text-align: center;
+          font-size: 16px;
+          color: white;
+          font-weight: 900;
+        }
+      }
     }
   }
-  .middleMain {
-    background-color: #a6a5a7;
-    grid-area: middleMain;
-  }
-  .rightMain {
-    background-color: #000000;
-    grid-area: rightMain;
-  }
 }
+
+// Most Visited
+// .most-visited {
+//   display: grid;
+//   grid-template-areas:
+//     'leftMain middleMain rightMain'
+//     'leftMain middleMain rightMain'
+//     'leftMain middleMain rightMain';
+//   grid-template-columns: 3fr 1fr 3fr;
+//   grid-template-rows: 3fr 1fr;
+//   .leftMain {
+//     background-color: #b10cff;
+//     grid-area: leftMain;
+//     padding: 0;
+//     margin: 0;
+//     h1 {
+//       padding: 0;
+//       margin: 0;
+//     }
+//   }
+//   .middleMain {
+//     background-color: #a6a5a7;
+//     grid-area: middleMain;
+//   }
+//   .rightMain {
+//     background-color: #000000;
+//     grid-area: rightMain;
+//   }
+// }
