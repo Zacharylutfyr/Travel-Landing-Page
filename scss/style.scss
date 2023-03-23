@@ -179,6 +179,12 @@ body {
           color: white;
           background-color: $specialColor;
           border: 1px solid white;
+
+          &:hover {
+            background-color: $secondaryColor;
+            border: 1px solid black;
+            color: black;
+          }
         }
       }
     }
@@ -265,6 +271,12 @@ body {
       }
       .left-contact-us {
         color: white;
+
+        input {
+          &:focus {
+            border: 1px solid #37ff00;
+          }
+        }
       }
       .right-contact-us {
         display: flex;
@@ -357,6 +369,7 @@ body {
           p {
             display: block;
             font-family: $font-family_1;
+            margin-top: 20px;
           }
         }
         .button-container {

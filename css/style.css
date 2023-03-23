@@ -145,6 +145,11 @@ body {
   background-color: #ff1053;
   border: 1px solid white;
 }
+.most-visited .container-fluid .container .row .btn:hover {
+  background-color: #f68bd2;
+  border: 1px solid black;
+  color: black;
+}
 
 .review .container-fluid .container .review-core {
   justify-content: space-around;
@@ -212,6 +217,9 @@ body {
 }
 .contact-us .container-fluid .container .left-contact-us {
   color: white;
+}
+.contact-us .container-fluid .container .left-contact-us input:focus {
+  border: 1px solid #37ff00;
 }
 .contact-us .container-fluid .container .right-contact-us {
   display: flex;
@@ -295,6 +303,7 @@ body {
 .contact-us .container-fluid .container .right-contact-us .list p {
   display: block;
   font-family: sans-serif;
+  margin-top: 20px;
 }
 .contact-us .container-fluid .container .right-contact-us .button-container {
   margin-top: 20px;
