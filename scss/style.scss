@@ -281,6 +281,11 @@ body {
             border: 1px solid #37ff00;
           }
         }
+        #inputState {
+          &:hover {
+            cursor: pointer;
+          }
+        }
       }
       .right-contact-us {
         display: flex;

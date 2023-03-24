@@ -221,6 +221,9 @@ body {
 .contact-us .container-fluid .container .left-contact-us input:focus {
   border: 1px solid #37ff00;
 }
+.contact-us .container-fluid .container .left-contact-us #inputState:hover {
+  cursor: pointer;
+}
 .contact-us .container-fluid .container .right-contact-us {
   display: flex;
 }
